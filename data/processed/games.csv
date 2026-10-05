@@ -1,0 +1,10 @@
+game,name,group,release_date,week_positive,week_negative,week_pct_positive,month_total,month_pct_positive,alltime_total,alltime_pct_positive,mc_critic_pc,mc_user_pc,mc_user_console,console_platform,steam_peak_launch_month,steam_avg_month3,retention_month3,source_notes
+cyberpunk-2077,Cyberpunk 2077,overhyped,2020-12-10,70592.0,13168.0,84.3,138772.0,84.9,419267.0,89.0,86.0,7.3,3.8,PS4,830387.0,24704.8,0.03,"Steamcharts: peak Dec 2020, avg Feb 2021. Metacritic retrieved 2026-10-04"
+concord,Concord,overhyped,2024-08-23,356.0,142.0,71.5,644.0,72.2,665.0,72.8,65.0,0.5,1.7,PS5,697.0,0.0,0.0,"Steamcharts page errors (delisted). Peak 697 from news reports (Game World Observer, Aug 2024). Servers shut down Sept 6 2024 so month-3 players = 0"
+suicide-squad-ktjl,Suicide Squad: Kill the Justice League,overhyped,2024-02-02,2641.0,844.0,75.8,4730.0,73.4,10752.0,62.2,63.0,2.1,3.5,PS5,13459.0,365.2,0.027,"Steamcharts: peak Feb 2024, avg Apr 2024"
+redfall,Redfall,overhyped,2023-05-02,481.0,1224.0,28.2,1984.0,28.9,3073.0,38.8,53.0,2.2,3.6,XSX,1560.0,33.5,0.021,"Steamcharts: peak May 2023, avg Jul 2023. Also on Game Pass, so Steam undercounts players"
+elden-ring,Elden Ring,delivered,2022-02-25,69901.0,8140.0,89.6,185779.0,92.6,572932.0,93.9,94.0,7.6,8.4,PS5,952523.0,211468.9,0.222,"Steamcharts table starts Mar 2022 (launch Feb 25), peak taken from first row. Avg Apr 2022"
+baldurs-gate-3,Baldur's Gate 3,delivered,2023-08-03,36801.0,1097.0,97.1,129299.0,97.4,505594.0,96.8,96.0,9.1,8.7,PS5,875343.0,148108.0,0.169,"Steamcharts: peak Aug 2023, avg Oct 2023. Early Access since Oct 2020"
+black-myth-wukong,Black Myth: Wukong,delivered,2024-08-20,23971.0,1510.0,94.1,48897.0,94.3,87410.0,93.8,81.0,8.2,7.9,PS5,2406967.0,92079.6,0.038,"Steamcharts: peak Aug 2024, avg Oct 2024"
+hogwarts-legacy,Hogwarts Legacy,delivered,2023-02-10,56082.0,3202.0,94.6,93650.0,94.1,181762.0,90.9,83.0,7.7,8.0,PS5,527652.0,21934.8,0.042,"Steamcharts: peak Feb 2023, avg Apr 2023"
+gta-vi,Grand Theft Auto VI,predict,2026-11-19,,,,,,,,,,,,,,,

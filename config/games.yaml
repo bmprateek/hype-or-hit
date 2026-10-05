@@ -1,0 +1,85 @@
+# release_date : full (1.0) worldwide launch date. Comments BEFORE this = pre-release chatter.
+# steam_appid  : number in the Steam store URL (store.steampowered.com/app/<appid>/). null if not on Steam.
+# group        : our starting hypothesis. The final label is computed from outcome data.
+# trailers     : YouTube video IDs (the part after "watch?v="). Step 2 suggests these.
+
+games:
+  - slug: cyberpunk-2077
+    name: Cyberpunk 2077
+    release_date: 2020-12-10
+    steam_appid: 1091500
+    group: overhyped
+    search_query: Cyberpunk 2077 official trailer
+    trailers: [8X2kIfS6fb8, vjF9GgrY9c0, BO8lX3hDU30]
+
+  - slug: concord
+    name: Concord
+    release_date: 2024-08-23
+    steam_appid: 2443720
+    group: overhyped
+    search_query: Concord official trailer PlayStation
+    trailers: [Zb-xvCPecps, mBnStS9d2xg, 7jqQJhjf_3o]
+    notes: Delisted by Sony in Sept 2024. Data may be partly gone.
+
+  - slug: suicide-squad-ktjl
+    name: "Suicide Squad: Kill the Justice League"
+    release_date: 2024-02-02
+    steam_appid: 315210
+    group: overhyped
+    search_query: Suicide Squad Kill the Justice League game trailer Rocksteady
+    trailers: [2EVFYstVuVk, KRKZ1ewc9f0, ghmQTBJG7lQ]
+    match: [Kill the Justice League]
+
+  - slug: redfall
+    name: Redfall
+    release_date: 2023-05-02
+    steam_appid: 1294810
+    group: overhyped
+    search_query: Redfall official trailer
+    trailers: [9T_nBy78Ofw, cR8GVePOdpY, 8cCFN77wtHY]
+
+
+  - slug: elden-ring
+    name: Elden Ring
+    release_date: 2022-02-25
+    steam_appid: 1245620
+    group: delivered
+    search_query: Elden Ring official trailer
+    trailers: [e5wwSxl0atc, E3Huy2cdih0, K_03kFqWfqs]
+
+  - slug: baldurs-gate-3
+    name: Baldur's Gate 3
+    release_date: 2023-08-03
+    steam_appid: 1086940
+    group: delivered
+    search_query: Baldur's Gate 3 official trailer
+    trailers: [OcP0WdH7rTs, WvMf_DcyWbI, UgTFtD2sHdE]
+    notes: Early Access from Oct 2020. We use the full 1.0 release date.
+    match: [Baldur]
+
+  - slug: black-myth-wukong
+    name: "Black Myth: Wukong"
+    release_date: 2024-08-20
+    steam_appid: 2358720
+    group: delivered
+    search_query: Black Myth Wukong official trailer
+    trailers: [O2nNljv0MOw, uT6RZBz9ueM, nOMIwsupy9k]
+    match: [Wukong, Black Myth]
+
+  - slug: hogwarts-legacy
+    name: Hogwarts Legacy
+    release_date: 2023-02-10
+    steam_appid: 990080
+    group: delivered
+    search_query: Hogwarts Legacy official trailer
+    trailers: [1O6Qstncpnc, 2AZmuZNu5LA, BtyBjOW8sGY]
+
+  # Live prediction target. No outcome yet, so it's excluded from training.
+  - slug: gta-vi
+    name: Grand Theft Auto VI
+    release_date: 2026-11-19
+    steam_appid: null
+    group: predict
+    search_query: Grand Theft Auto VI trailer Rockstar Games
+    trailers: [QdBZY2fkU-0, VQRLujxTm3c, tJbzMqJGH4k]
+    match: [Grand Theft Auto VI, GTA VI, GTA 6]

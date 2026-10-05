@@ -1,0 +1,22 @@
+# Secrets
+.env
+
+# Python and editor files
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+
+# Raw data (YouTube comments, Steam reviews): not redistributed
+data/raw/*
+!data/raw/manual_outcomes.csv
+
+# Processed data: keep only small result files
+data/processed/*
+!data/processed/games.csv
+!data/processed/llm_labels.csv
+!data/processed/llm_per_game.csv
+!data/processed/llm_permutation_tests.csv
+!data/processed/permutation_tests.csv
+!data/processed/topics.csv
+!data/processed/human_check_results.csv

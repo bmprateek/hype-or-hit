@@ -1,0 +1,8 @@
+comparison,agree_pct,kappa
+Sentiment: YOU vs Claude,68.4,0.52
+Sentiment: YOU vs VADER,47.4,0.18
+Skepticism: YOU vs Claude,81.6,0.61
+Skepticism: YOU vs word list,60.5,0.13
+Excitement: YOU vs Claude,63.2,0.17
+Excitement: YOU vs word list,63.2,0.1
+Sarcasm: YOU vs Claude,92.1,0.36

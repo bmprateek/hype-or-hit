@@ -1,0 +1,10 @@
+game,group,n,llm_negative,llm_positive,llm_excitement,llm_skepticism,llm_sarcasm,llm_comparison,llm_live_service
+concord,overhyped,3000,71.5,10.0,6.2,61.6,22.4,32.6,8.9
+cyberpunk-2077,overhyped,3000,16.0,48.5,40.9,18.1,9.7,25.7,1.0
+redfall,overhyped,1917,43.7,28.2,24.2,46.4,6.9,35.4,7.1
+suicide-squad-ktjl,overhyped,3000,17.0,33.9,19.7,15.7,7.9,39.5,0.8
+baldurs-gate-3,delivered,3000,9.8,52.6,45.0,12.3,8.1,28.3,1.0
+black-myth-wukong,delivered,3000,13.0,49.6,36.1,15.8,7.7,28.4,0.4
+elden-ring,delivered,3000,14.0,49.6,41.2,14.2,11.0,39.0,0.5
+hogwarts-legacy,delivered,3000,14.0,48.8,45.0,16.2,6.7,18.8,3.8
+gta-vi,predict,1014,18.9,45.4,33.6,18.8,7.6,18.7,1.4
