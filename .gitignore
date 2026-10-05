@@ -10,7 +10,7 @@ __pycache__/
 # Raw data (YouTube comments, Steam reviews): not redistributed
 data/raw/*
 !data/raw/manual_outcomes.csv
-
+!docs/Hype or Hit Interview Prep Notes.md
 # Processed data: keep only small result files
 data/processed/*
 !data/processed/games.csv
