@@ -2,6 +2,8 @@
 
 Can YouTube comments posted **before** a game launches tell genuine excitement apart from hype that is headed for a letdown?
 
+📖 **Want the full story?** A step-by-step walkthrough of every script, what we observed, the mistakes we caught and the "aha" moments is in **[`docs/WALKTHROUGH.md`](docs/WALKTHROUGH.md)**.
+
 I analyzed **~24,000 pre-release YouTube comments** across 8 major game launches (4 flops, 4 hits), labeled them with an LLM (Claude Haiku), validated those labels against human judgment, and used the patterns to make a prediction for **GTA VI** (releasing Nov 19, 2026).
 
 ![Negativity by game](figures/1_negativity_by_game.png)
@@ -46,6 +48,8 @@ I analyzed **~24,000 pre-release YouTube comments** across 8 major game launches
 | 9 | `09_human_check.py` | Human gold-standard check of Claude vs VADER and word lists |
 | 10 | `10_charts.py` | Presentation charts |
 
+Each step is explained in detail, with observations and results, in [`docs/WALKTHROUGH.md`](docs/WALKTHROUGH.md).
+
 **Key design choices**
 - **No data leakage:** only comments posted before launch are used, and comments edited after launch are excluded (some added "this aged badly").
 - **Blind LLM labeling:** Claude never saw game names or outcomes, and batches mixed games together.
@@ -62,6 +66,50 @@ I analyzed **~24,000 pre-release YouTube comments** across 8 major game launches
 - **Human validation used one labeler** and a small sample (38 comments).
 - **The LLM may recognize famous games** from their content even without names.
 - **Chatter cannot detect technical problems** (the Cyberpunk case).
+
+## Conclusion
+
+**Question:** Can pre-release YouTube chatter predict whether a hyped game will disappoint?
+
+**Answer: partly yes.** Here is what this project shows:
+
+| | Conclusion |
+|---|---|
+| ✅ **What chatter CAN tell you** | Whether audiences are **turning against** a game (rejected, like Concord and Redfall) or **don't care** (indifferent, like Suicide Squad). The clearest warning sign is a **high share of negative comments and a low share of positive ones** before launch. |
+| ❌ **What chatter CANNOT tell you** | Whether the finished game will **work properly**. Cyberpunk 2077's comments looked like a hit's, yet it launched broken on consoles. Trailers can't show bugs. |
+| 🔍 **What we learned about methods** | Simple sentiment tools (VADER, word lists) misread YouTube comments because of **sarcasm and indirect doubt**. An LLM, checked against human labels, read them far more accurately and made the signal three times clearer. |
+| 🎮 **GTA VI prediction** | Its gameplay reveal looks like a **hit**: low negativity, mostly positive. It is slightly less excited and slightly more skeptical than past hits (likely hype fatigue after a long wait). **Very unlikely to be a rejected or indifferent flop**, but like any game, it could still disappoint on technical quality. |
+
+**In one sentence:** *Negative pre-release chatter is a reliable early warning that audiences will reject a game, but positive chatter is no guarantee of a smooth launch.*
+
+**Who could use this:** publishers and marketing teams monitoring reactions to trailers, and investors watching high-profile launches, as an early warning system rather than a final verdict.
+
+## Documentation
+
+| File | What it contains |
+|---|---|
+| [`README.md`](README.md) | This overview: question, findings, conclusion |
+| [`docs/WALKTHROUGH.md`](docs/WALKTHROUGH.md) | **Step-by-step explanation of every script**, what we observed at each step, problems we caught and fixed, all "aha" moments, and the final findings |
+| [`figures/`](figures) | The 5 charts used in this README and the walkthrough |
+
+## Project structure
+
+```
+hype-or-hit/
+├── README.md               ← you are here
+├── LICENSE
+├── requirements.txt
+├── config/
+│   └── games.yaml          ← games, release dates, Steam IDs, chosen trailers
+├── docs/
+│   └── WALKTHROUGH.md      ← full step-by-step explanation
+├── figures/                ← charts (PNG)
+├── scripts/                ← run in order: 01 → 10
+├── src/hype/               ← shared code (YouTube, Steam, text, LLM, statistics helpers)
+└── data/
+    ├── raw/manual_outcomes.csv     ← Metacritic and player-count outcomes
+    └── processed/                  ← result files, incl. Claude's labels (llm_labels.csv)
+```
 
 ## Reproduce it
 
